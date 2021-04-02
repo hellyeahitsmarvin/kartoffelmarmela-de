@@ -172,7 +172,7 @@ section.regular img{
 }
 
 section#rezept {
-    background-color: darkseagreen;
+    background-color: #FAA275;
 }
 
 section#info {
@@ -206,14 +206,14 @@ figure figcaption {
 }
 
 section#kartoffelsonntag {
-    background-color: tomato;
+    background-color: #d9ed92;
 }
 
 a button.termin{
     font-size: 22px;
     color: black;
     padding: 5px 15px 8px;
-    background-color: white;
+    background-color: #F69062;
     border-radius: 5px;
     transition-duration: 0.4s;
     position: relative;
@@ -224,7 +224,7 @@ a button.termin{
 }
 
 a button.termin:hover {
-    border-color: palegoldenrod;
+    border-color: darkseagreen;
 }
 
 section#kontakt {
@@ -402,10 +402,6 @@ figure figcaption {
     font-size: 12px;
     padding: 5px 0 0 0;
     text-align: left;
-}
-
-section#kartoffelsonntag {
-    background-color: tomato;
 }
 
 a button.termin{
