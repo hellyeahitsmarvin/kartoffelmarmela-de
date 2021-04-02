@@ -1,0 +1,149 @@
+/* ALL CSS */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: white;
+    max-width: 1500px;
+}
+
+h1, h2, h3 {
+    font-family: 'barrioregular', cursive;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    text-shadow: #e3c4b7 4px 4px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    padding-top: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    padding-top: 30px;
+}
+
+h4 {
+    font-family: 'new_tegominregular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+p, a {
+    font-family: 'new_tegominregular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+/* NAVIGATION CSS */
+
+nav {
+    display: flex;
+    padding: 30px 5% 20px 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-name-large {
+    width: 300px;
+    vertical-align: top;
+}
+
+
+/* MAIN */
+
+main {
+    padding: 30px 100px 50px 7%;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: antiquewhite;
+    margin: 0 15%;
+}
+
+.footer-links {
+    font-family: 'new_tegominregular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    line-height: 1.5em;
+    text-align: left;
+    padding: 50px;
+}
+
+.footer-links a {
+    text-decoration: underline coral;
+    color: black;
+}
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 768px) {
+  
+    h1 {
+        font-size: 28px;
+        text-shadow: #e3c4b7 2px 2px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 26px;
+        padding-top: 20px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        padding-top: 20px;
+    }
+    
+    p, a {
+        font-size: 18px;
+    }
+    
+    /* NAVIGATION CSS */
+    
+    nav {
+        display: unset;
+        padding: 10px 0 0 10px;
+        justify-content: unset;
+        align-items: unset;
+    }
+    
+    #logo-name-large {
+        width: 50%;
+        max-width: 300px;
+        margin: 10px 0 0 10px;
+    }
+    
+    
+    /* MAIN */
+    
+    main {
+        padding: 30px 10%;
+    }
+    
+
+    /* FOOTER */
+
+    footer {
+        margin: 0 10%;
+        padding: 20px
+    }
+    
+    .footer-links {
+        font-size: 18px;
+        padding: 0;
+    }  
+    
+}

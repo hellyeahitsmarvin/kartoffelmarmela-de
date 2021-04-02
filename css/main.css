@@ -1,0 +1,436 @@
+/* ALL CSS */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: white;
+    max-width: 1500px;
+}
+
+h1, h2 {
+    font-family: 'barrioregular', cursive;
+}
+
+p, a {
+    font-family: 'new_tegominregular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* NAVIGATION CSS */
+
+nav {
+    display: flex;
+    padding: 30px 5% 20px 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-name-large {
+    width: 300px;
+    vertical-align: top;
+}
+
+#nav-chapters a {
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    padding: 0 15px; 
+}
+
+#speech-bubble {
+    width: 200px;
+    vertical-align: top;
+}
+
+/* HERO SECTION */
+
+#hero {
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 60vh;
+    margin: 30px 15% 60px;
+}
+
+#hero img {
+    position: absolute;
+    z-index: 1;
+    height: 60vh;
+    max-width: 60vw;
+}
+
+/* MARQUEE CSS */
+
+.marquee {
+    font-family: 'barrioregular', cursive;
+    font-size: 4em;
+    margin: 2rem 0;
+    overflow: hidden;
+ }
+
+.marquee span {   
+    display: inline-block;
+    white-space: nowrap;
+    color: #85E7C8;
+    width: var(--tw);
+    text-shadow: var(--tw) 0 currentColor, 
+                 calc(var(--tw) * 2) 0 currentColor, 
+                 calc(var(--tw) * 3) 0 currentColor,
+                 calc(var(--tw) * 4) 0 currentColor;
+   
+    will-change: transform;
+    animation: marquee var(--ad) linear infinite;
+    animation-play-state: paused;
+}
+
+.marquee:hover span {
+    animation-play-state: running;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/*  
+ * on MacOs: System Preferences > 
+ *           Accessibility > 
+ *           Display > Reduce motion
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee span {
+    animation: none;
+    text-shadow: none;
+    width: auto;
+    display: block;
+    line-height: 1.5;
+    text-align: center;
+    white-space: normal;
+  }
+}
+
+/* SHORT INTRO */
+
+section#intro {
+    text-align: center;
+    margin: 0 15%;
+}
+
+#intro h1 {
+    font-size: 78px;
+    text-shadow: #e3c4b7 4px 4px;
+    margin-block-end: 0;
+}
+
+#intro p {
+    font-size: 28px;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 0 10%;
+}
+
+#intro img {
+    margin-bottom: 60px;
+}
+
+/* REGULAR SECTIONS */
+
+section.regular {
+    min-height: 40vh;
+    margin: 40px 15% 100px;
+}
+
+section.regular h2 {
+    font-size: 56px;
+    text-shadow: 2px 2px white;
+    padding: 50px 50px 20px;
+    margin: 0;
+}
+
+section.regular p {
+    font-size: 28px;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 0 50px 50px;
+    margin: 0;  
+}
+
+section.regular p span.first-letter {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+section.regular img{
+    position: relative;
+}
+
+section#rezept {
+    background-color: darkseagreen;
+}
+
+section#info {
+    margin-bottom: 0;
+}
+
+section#info p {
+    padding-bottom: 15px;
+}
+
+section#info img {
+    float: right;
+    right: -170px;
+}
+
+figure#video {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+figure#video img {
+    max-width: 50%;
+}
+
+figure figcaption {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+section#kartoffelsonntag {
+    background-color: tomato;
+}
+
+a button.termin{
+    font-size: 22px;
+    color: black;
+    padding: 5px 15px 8px;
+    background-color: white;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    position: relative;
+    float: right;
+    right: 50px;
+    bottom: 70px;
+
+}
+
+a button.termin:hover {
+    border-color: palegoldenrod;
+}
+
+section#kontakt {
+    background-color: palegoldenrod;
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: antiquewhite;
+    margin: 0 15%;
+}
+
+.footer-links {
+    font-family: 'new_tegominregular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    line-height: 1.5em;
+    text-align: left;
+    padding: 50px;
+}
+
+.footer-links a {
+    text-decoration: underline coral;
+    color: black;
+}
+
+#wcb_p {
+    --b1: black;
+    --b2: coral;
+}
+
+#wcb_g {
+    color: black;
+}
+
+
+
+/* SMALL SCREENS */
+
+@media only screen and (max-width: 1250px) {
+
+#nav-chapters a {
+    display: none;
+}
+
+.marquee {
+    font-size: 3em;
+}
+
+}
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 768px) {
+
+nav {
+    display: unset;
+    padding: 10px 0 0 10px;
+    justify-content: unset;
+    align-items: unset;
+}
+
+#logo-name-large {
+    width: 50%;
+    max-width: 300px;
+    margin: 10px 0 0 10px;
+}
+
+#nav-chapters a {
+    display: none;
+}
+
+#speech-bubble {
+    display: none;
+}
+
+/* HERO SECTION */
+
+#hero {
+    height: 50vh;
+    margin: 20px 10% 30px 10%;
+}
+
+#hero img {
+    position: absolute;
+    z-index: 1;
+    height: unset;
+    max-height: 40vh;
+    max-width: 80vw;
+}
+
+/* MARQUEE CSS */
+
+.marquee {
+    display: none;
+}
+
+/* SHORT INTRO */
+
+section#intro {
+    margin: 0 10%;
+}
+
+#intro h1 {
+    font-size: 28px;
+    text-shadow: #e3c4b7 2px 2px;
+    text-align: left;
+}
+
+#intro p {
+    font-size: 18px;
+    padding: 0;
+}
+
+#intro img {
+    max-width: 60vw;
+    margin-bottom: 0;
+}
+
+/* REGULAR SECTIONS */
+
+section.regular {
+    margin: 30px 10% 30px;
+    padding: 20px
+}
+
+section.regular h2 {
+    font-size: 28px;
+    text-shadow: 2px 2px white;
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+
+section.regular p {
+    font-size: 18px;
+    padding: unset;
+    margin: 0;  
+}
+
+section.regular p span.first-letter {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+section#info {
+    text-align: center;
+}
+
+section#info h2 {
+    text-align: left;
+}
+
+section#info img {
+    width: 60vw;
+    float: unset;
+    right: unset;
+    margin-bottom: 30px;
+}
+
+figure#video {
+    text-align: center;
+    width: calc(80vw - 40px);
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+figure#video img {
+    max-width: 100%;
+}
+
+figure figcaption {
+    font-size: 12px;
+    padding: 5px 0 0 0;
+    text-align: left;
+}
+
+section#kartoffelsonntag {
+    background-color: tomato;
+}
+
+a button.termin{
+    font-size: 18px;
+    position: unset;
+    float: unset;
+    right: unset;
+    bottom: unset;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0 10%;
+    padding: 20px
+}
+
+.footer-links {
+    font-size: 18px;
+    padding: 0;
+}   
+
+#wcb_p {
+    font-size: 12px;
+    padding-top: 40px;
+}
+
+}

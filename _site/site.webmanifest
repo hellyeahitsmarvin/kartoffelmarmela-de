@@ -1,0 +1,12 @@
+{
+  "short_name": "Kartoffelmarmela.de",
+  "name": "Kartoffelmarmela.de - Sonne im Glas",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "96x96"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#FADDC6",
+  "theme_color": "#FADDC6"
+}
