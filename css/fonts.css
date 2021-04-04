@@ -4,6 +4,7 @@
          url('../fonts/barrio-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap
 }
 
 @font-face {
@@ -12,5 +13,5 @@
          url('../fonts/newtegomin-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap
 }
