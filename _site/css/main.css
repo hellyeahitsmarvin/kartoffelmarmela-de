@@ -237,6 +237,7 @@ section#kontakt {
 footer {
     background-color: antiquewhite;
     margin: 0 15%;
+    padding-bottom: 20px;
 }
 
 .footer-links {
@@ -259,6 +260,10 @@ footer {
 
 #wcb_g {
     color: black;
+}
+
+.wcb-d #wcb_2 {
+    color: #000;
 }
 
 
@@ -427,6 +432,10 @@ footer {
 #wcb_p {
     font-size: 12px;
     padding-top: 40px;
+}
+
+.wcb-d #wcb_2 {
+    font-size: 12px;
 }
 
 }
